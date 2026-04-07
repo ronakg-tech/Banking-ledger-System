@@ -1,4 +1,4 @@
-🏦 Advanced Banking Ledger System
+**🏦 BANKING LEDGER SYSTEM**
 
 A high-performance, secure, and scalable banking backend built using Node.js, Express, and MongoDB.
 This system implements a Double-Entry Ledger Architecture to ensure financial accuracy, consistency, and reliability.
