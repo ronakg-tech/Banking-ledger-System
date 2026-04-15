@@ -113,29 +113,32 @@ GET    /api/accounts/balance/:accountId    → Get dynamic balance
 ## 💸 Transactions
 POST   /api/transactions/                      → P2P transfer (atomic + idempotent)  
 POST   /api/transactions/system/initial-funds  → Admin funding  
-### 🛡️ Transaction Flow
- 1️⃣ Validate
-Input validation
-Authentication
-Idempotency check
- 2️⃣ Initialize
-Create pending transaction
- 3️⃣ Process
-Start MongoDB session
-Debit + Credit ledger entries
- 4️⃣ Finalize
-Commit transaction
-Mark as completed
-###⚠️ Important Notes
--Add .env and node_modules to .gitignore
--Deployment (e.g., Render)
--node server.js
-### 🎯 Key Highlights
--✅ Real-world banking-grade architecture
--🔐 Strong focus on data integrity & security
--⚡ Scalable and production-ready backend design
--🤝 Contributing
 
-## Contributions are welcome!
-Feel free to fork the repo and submit a pull request.
 
+## 🛡️ Transaction Flow
+
+### 1️⃣ Validate
+- Input validation  
+- Authentication  
+- Idempotency check  
+
+### 2️⃣ Initialize
+- Create `pending` transaction  
+
+### 3️⃣ Process
+- Start MongoDB session  
+- Debit + Credit ledger entries  
+
+### 4️⃣ Finalize
+- Commit transaction  
+- Mark as `completed`  
+
+---
+
+## ⚠️ Important Notes
+
+- Add `.env` and `node_modules` to `.gitignore`
+
+### 🚀 Deployment (e.g., Render)
+```bash
+node server.js
