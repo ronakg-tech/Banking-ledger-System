@@ -64,13 +64,13 @@ This system implements a **Double-Entry Ledger Architecture** to ensure **financ
 
 ### 📂 Project Structure
 
-src/
-├── config/ # DB & environment setup
-├── controllers/ # Request handling logic
-├── middlewares/ # Auth, validation, idempotency
-├── models/ # Mongoose schemas
-├── routes/ # API routes
-├── services/ # Email & external integrations
+- src/
+- ├── config/ # DB & environment setup
+- ├── controllers/ # Request handling logic
+- ├── middlewares/ # Auth, validation, idempotency
+- ├── models/ # Mongoose schemas
+- ├── routes/ # API routes
+- ├── services/ # Email & external integrations
 
 
 ---
