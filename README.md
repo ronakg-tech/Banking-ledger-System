@@ -80,12 +80,12 @@ This system implements a **Double-Entry Ledger Architecture** to ensure **financ
 ### 1️⃣ Environment Variables (`.env`)
 
 
-MONGO_URI=
-JWT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GOOGLE_REFRESH_TOKEN=
-EMAIL_USER=
+- MONGO_URI=
+- JWT_SECRET=
+- GOOGLE_CLIENT_ID=
+- GOOGLE_CLIENT_SECRET=
+- GOOGLE_REFRESH_TOKEN=
+- EMAIL_USER=
 
 
 ---
